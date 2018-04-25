@@ -6,7 +6,7 @@ using System.Net.Http;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace AntiPhish.NET
+namespace AntiPhishNET
 {
     public class PhishingChecker
     {
@@ -16,8 +16,6 @@ namespace AntiPhish.NET
         private string GetEndPoint(string scanId)
         {
             var url = @"https://app.phish.ai/api/url/report?scan_id=" + scanId;
-
-            Console.WriteLine(url);
 
             return url;
         }

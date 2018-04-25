@@ -2,7 +2,7 @@
 using System.Collections.Generic;
 using System.Text;
 
-namespace AntiPhish.NET
+namespace AntiPhishNET
 {
     public static class AntiPhish
     {
