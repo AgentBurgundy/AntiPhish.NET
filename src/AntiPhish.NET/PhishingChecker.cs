@@ -17,8 +17,6 @@ namespace AntiPhish.NET
         {
             var url = @"https://app.phish.ai/api/url/report?scan_id=" + scanId;
 
-            Console.WriteLine(url);
-
             return url;
         }
 
