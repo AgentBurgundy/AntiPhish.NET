@@ -12,7 +12,7 @@ namespace AntiPhishNET.Test
         [TestCase("http://youtube.com")]
         public void IsPhishing(string url)
         {
-            var result = AntiPhish.IsPhishingSite(url);
+            var result = AntiPhish.IsNotPhishingSite(url);
             
             Console.WriteLine(result);
 

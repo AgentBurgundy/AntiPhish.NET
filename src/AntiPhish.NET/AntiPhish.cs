@@ -8,7 +8,7 @@ namespace AntiPhishNET
     {
         private static PhishingChecker _checker = new PhishingChecker();
 
-        public static bool IsPhishingSite(string url)
+        public static bool IsNotPhishingSite(string url)
         {
             var json = _checker.GetResult(
                     _checker.CheckUrlAsync(url).Result.Split(':')[1].Trim(new char[] { '\"', '}' }));
