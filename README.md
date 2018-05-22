@@ -11,12 +11,12 @@ AntiPhish.NET is packaged in NuGet, to utilize it just add it under your NuGet p
 
 ## How to use?
 In your project that references AntiPhish.NET, all you have to do to validate a website is call `AntiPhish.IsPhishingSite(string urlToCheck)`. For example.
-```
+``` cs
 using AntiPhishNET;
 
 private void VerifyWebsite(string url)
 {
-    Assert.That(AntiPhish.IsPhishingSite(url) == false);
+    Assert.That(AntiPhish.IsNotPhishingSiteAsync(url).Result == false);
 }
 ```
 
