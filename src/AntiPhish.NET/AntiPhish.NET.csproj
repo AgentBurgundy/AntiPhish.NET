@@ -3,7 +3,18 @@
   <PropertyGroup>
     <TargetFramework>netstandard2.0</TargetFramework>
     <SignAssembly>true</SignAssembly>
-    <AssemblyOriginatorKeyFile>AntiPhishNet-Key.pfx</AssemblyOriginatorKeyFile>
+    <AssemblyOriginatorKeyFile>Antiphish.pfx</AssemblyOriginatorKeyFile>
+    <Authors>Ronald Barnhart</Authors>
+    <Company>Self Taught Dev</Company>
+    <Description>.Net wrapper for the Phish.ai web api. Test whether or not a Url is a phishing site!</Description>
+    <Copyright />
+    <PackageProjectUrl>https://github.com/AgentBurgundy/AntiPhish.NET</PackageProjectUrl>
+    <RepositoryUrl>https://github.com/AgentBurgundy/AntiPhish.NET</RepositoryUrl>
+    <RepositoryType>Git</RepositoryType>
+    <PackageTags>Phishing, .net, web-api, wrapper</PackageTags>
+    <Version>1.2.0</Version>
+    <GeneratePackageOnBuild>true</GeneratePackageOnBuild>
+    <DelaySign>false</DelaySign>
   </PropertyGroup>
 
   <ItemGroup>

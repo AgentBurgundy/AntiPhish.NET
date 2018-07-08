@@ -1,7 +1,7 @@
 ﻿using System;
 using NUnit.Framework;
 
-namespace AntiPhishNET.Test
+namespace AntiPhish.NET.Test
 {
     [TestFixture]
     public class AntiPhishTests
@@ -11,7 +11,7 @@ namespace AntiPhishNET.Test
         [TestCase("http://youtube.com")]
         public void IsNotPhishingSite_StringUrl_Success(string url)
         {
-            var result = AntiPhish.IsNotPhishingSiteAsync(url).Result;
+            var result = global::AntiPhish.NET.AntiPhish.IsNotPhishingSiteAsync(url).Result;
             
             Console.WriteLine(result);
 
@@ -23,7 +23,7 @@ namespace AntiPhishNET.Test
         {
             Uri url = new Uri("http://google.com");
 
-            var result = AntiPhish.IsNotPhishingSiteAsync(url).Result;
+            var result = global::AntiPhish.NET.AntiPhish.IsNotPhishingSiteAsync(url).Result;
 
             Console.WriteLine(result);
 
